@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: myuser
+    password: mypass
+    hikari:
+      maximum-pool-size: 10
+
+flyway:
+  enabled: true
+  locations: classpath:db/migration
+  
+debug: true
